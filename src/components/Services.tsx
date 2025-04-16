@@ -28,6 +28,8 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
               className="bg-gray-800 rounded-2xl p-6 shadow-lg hover:scale-105 transition duration-300"
             >
               <div className="mb-4">{service.icon}</div>

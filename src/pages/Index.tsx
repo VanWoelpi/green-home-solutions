@@ -18,6 +18,17 @@ const Index = () => {
       once: false,
       mirror: true,
     });
+
+    // Reinitialize AOS after page load to ensure animations work
+    window.addEventListener('load', () => {
+      AOS.refresh();
+    });
+
+    return () => {
+      window.removeEventListener('load', () => {
+        AOS.refresh();
+      });
+    };
   }, []);
 
   return (

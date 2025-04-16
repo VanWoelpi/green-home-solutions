@@ -25,7 +25,7 @@ const Header = () => {
           <a href="#leistungen" className="hover:text-green-400 transition">Leistungen</a>
           <a href="#produkte" className="hover:text-green-400 transition">Produkte</a>
           <a href="#kontakt" className="hover:text-green-400 transition">Kontakt</a>
-          <a href="/qualifizierungsnachweis.pdf" target="_blank" className="hover:text-green-400 transition">
+          <a href="/public/files/Qualifizierungsnachweis.pdf" target="_blank" className="hover:text-green-400 transition">
             VDI Qualifizierungsnachweis
           </a>
         </nav>

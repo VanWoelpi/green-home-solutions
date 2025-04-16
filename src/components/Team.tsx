@@ -5,7 +5,7 @@ const Team = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-4xl font-bold mb-6">Lerne unser Team kennen</h2>
         <div className="animate-fade-up">
-          <img src="/images/team.jpg" alt="Unser Team" className="rounded-xl shadow-lg mx-auto" />
+          <img src="/images/Team.jpg" alt="Unser Team" className="rounded-xl shadow-lg mx-auto" />
         </div>
       </div>
     </section>

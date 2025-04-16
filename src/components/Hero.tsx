@@ -3,7 +3,7 @@ const Hero = () => {
   return (
     <section className="relative h-[90vh] overflow-hidden bg-gray-900">
       <video autoPlay muted loop playsInline className="absolute top-0 left-0 w-full h-full object-cover z-0">
-        <source src="/video/hero-background.mp4" type="video/mp4" />
+        <source src="/videos/Mann-auf-dem-Dach-eines-Einfamilienhauses.mp4" type="video/mp4" />
         Dein Browser unterstützt kein HTML5-Video.
       </video>
 

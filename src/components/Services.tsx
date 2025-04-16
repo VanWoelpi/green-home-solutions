@@ -21,23 +21,25 @@ const Services = () => {
   ];
 
   return (
-    <section id="leistungen" className="py-24 bg-gray-900">
-      <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-4xl font-bold mb-12 animate-fade-up">Unsere Leistungen</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-gray-800 rounded-2xl p-6 shadow-lg hover:scale-105 transition duration-300"
-            >
-              <div className="mb-4">{service.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-              <p className="text-gray-300">{service.description}</p>
-            </div>
-          ))}
+      <section id="leistungen" className="py-24 bg-gray-900">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold mb-12 animate-fade-up">Unsere Leistungen</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+                <div
+                    key={index}
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
+                    className="bg-gray-800 rounded-2xl p-6 shadow-lg hover:scale-105 transition duration-300"
+                >
+                  <div className="mb-4">{service.icon}</div>
+                  <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+                  <p className="text-gray-300">{service.description}</p>
+                </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
   );
 };
 

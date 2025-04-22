@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 
 const Products = () => {
   return (
@@ -15,9 +16,9 @@ const Products = () => {
               <p className="text-gray-300 mb-4">
                 Moderne Wärmepumpen mit hoher Effizienz und geringer Umweltbelastung.
               </p>
-              <a href="#kontakt" className="text-green-400 hover:underline">
+              <Link to="/photovoltaik" className="text-green-400 hover:underline">
                 Jetzt informieren →
-              </a>
+              </Link>
             </div>
             <div
                 data-aos="fade-up"
@@ -29,9 +30,10 @@ const Products = () => {
               <p className="text-gray-300 mb-4">
                 Photovoltaik-Systeme für saubere und autarke Energieerzeugung.
               </p>
-              <a href="#kontakt" className="text-green-400 hover:underline">
-                Mehr erfahren →
-              </a>
+              <Link to="/waermepumpen" className="text-green-400 hover:underline">
+                    Mehr erfahren →
+              </Link>
+
             </div>
           </div>
         </div>

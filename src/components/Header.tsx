@@ -12,7 +12,7 @@ const Header = () => {
     <header className="bg-gray-900 sticky top-0 z-50 shadow-lg">
       <div className="max-w-10xl mx-auto px-4 py-2 flex items-center justify-between">
         <a href="#" className="flex items-center mr-4">
-          <img src="public/images/wpw_logo.png" alt="wpw Logo" className="h-16" />
+          <img src="public/images/wpw_logo.png" alt="wpw Logo" className="h-10" />
         </a>
 
         {/* Mobile menu button */}

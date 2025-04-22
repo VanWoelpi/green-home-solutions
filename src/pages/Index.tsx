@@ -1,13 +1,13 @@
 
 import { useEffect } from 'react';
-import Header from '@/components/Header';
+import Layout from "@/components/Layout";
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
 import Products from '@/components/Products';
 import Team from '@/components/Team';
 import CTA from '@/components/CTA';
 import ContactForm from '@/components/ContactForm';
-import Footer from '@/components/Footer';
+import PartnerLogos from "@/components/PartnerLogos";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -32,16 +32,15 @@ const Index = () => {
   }, []);
 
   return (
-      <div className="min-h-screen bg-gray-950">
-        <Header />
+      <Layout>
         <Hero />
         <Services />
         <Products />
         <Team />
         <CTA />
+        <PartnerLogos />
         <ContactForm />
-        <Footer />
-      </div>
+      </Layout>
   );
 };
 

@@ -16,14 +16,6 @@ const Navbar = () => {
         >
           Wärmepumpen
         </Link>
-
-        <a
-            href="#kontakt"
-            className="text-white text-xl font-medium hover:text-green-400 transition"
-        >
-          Kontakt
-        </a>
-
         <a
             href="/public/files/Qualifizierungsnachweis.pdf"
             target="_blank"

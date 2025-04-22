@@ -27,6 +27,12 @@
     --radius: 0.5rem;
   }
 
+  @layer components {
+    .section-default {
+      @apply bg-gray-900 text-white py-24;
+    }
+  }
+
   html {
     scroll-behavior: smooth;
   }
@@ -46,3 +52,5 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+

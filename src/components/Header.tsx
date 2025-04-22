@@ -1,30 +1,40 @@
-
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import Navbar from './Navbar.tsx';
-import {Link} from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-gray-900 sticky top-0 z-50 shadow-lg">
-      <div className="max-w-10xl mx-auto px-4 py-2 flex items-center justify-between">
-        <a href="#" className="flex items-center mr-4">
-          <img src="public/images/wpw_logo.png" alt="wpw Logo" className="h-10" />
-        </a>
+      <header className="bg-gray-900 sticky top-0 z-50 shadow-lg">
+        <div className="container py-2 flex items-center justify-between">
+          {/* Logo */}
+          <a href="/" className="flex items-center mr-4 -ml-4 md:-ml-6">
+            <img src="/images/wpw_logo.png" alt="wpw Logo" className="h-10" />
+          </a>
 
-        {/* Mobile menu button */}
-        <button
-          className="md:hidden text-white"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex flex-1 justify-center">
+            <Navbar />
+          </div>
 
-        {/* Desktop Navigation */}
-        <Navbar />
+          {/* CTA Button rechts (nur Desktop) */}
+          <a
+              href="#kontakt"
+              className="hidden md:inline-block px-4 py-2 rounded-full border-2 border-green-400 text-green-400 hover:bg-green-500 hover:text-white transition duration-300 text-sm font-semibold"
+          >
+            Anfrage
+          </a>
+
+          {/* Mobile menu button */}
+          <button
+              className="md:hidden text-white"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
@@ -45,13 +55,6 @@ const Header = () => {
                   Wärmepumpen
                 </Link>
                 <a
-                    href="#kontakt"
-                    className="text-gray-300 hover:text-green-400 transition"
-                    onClick={() => setIsMenuOpen(false)}
-                >
-                  Kontakt
-                </a>
-                <a
                     href="/public/files/Qualifizierungsnachweis.pdf"
                     target="_blank"
                     className="text-gray-300 hover:text-green-400 transition"
@@ -68,8 +71,7 @@ const Header = () => {
               </nav>
             </div>
         )}
-      </div>
-    </header>
+      </header>
   );
 };
 

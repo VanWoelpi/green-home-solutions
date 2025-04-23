@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Photovoltaik from "./pages/Photovoltaik.tsx";
 import Waermepumpen from "./pages/Waermepumpen.tsx";
+import ScrollToTop from "@/components/ScrollToTop.tsx";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +17,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
 

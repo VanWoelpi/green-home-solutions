@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 const Footer = () => {
   return (
       <footer className="section-default text-sm">
-        <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 py-4">
+        <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 py-2">
           {/* Öffnungszeiten */}
           <div>
             <h5 className="text-xl font-semibold mb-2">Öffnungszeiten</h5>
@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom Bar */}
-        <div className="section-default text-gray-500 text-xs py-6">
+        <div className="section-default text-gray-500 text-xs py-2">
           <div className="container flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
             <p>
               © {new Date().getFullYear()} | Alle Rechte vorbehalten | Christian Wölper – Innovative Konzepte für zeitgemäße Energietechnik

@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import Photovoltaik from "./pages/Photovoltaik.tsx";
 import Waermepumpen from "./pages/Waermepumpen.tsx";
 import ScrollToTop from "@/components/ScrollToTop.tsx";
+import Impressum from "@/components/Impressum.tsx";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,8 @@ const App = () => (
           {/* Neue Seiten */}
           <Route path="/photovoltaik" element={<Photovoltaik />} />
           <Route path="/waermepumpen" element={<Waermepumpen />} />
+          <Route path="/impressum" element={<Impressum />} />
+
 
           {/* Catch-All */}
           <Route path="*" element={<NotFound />} />

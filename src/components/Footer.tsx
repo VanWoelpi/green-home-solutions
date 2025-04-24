@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -57,14 +58,12 @@ const Footer = () => {
 
             <ul className="flex flex-wrap justify-center md:justify-end gap-4">
               <li>
-                <a
-                    href="https://woelper-photovoltaik-waermepumpen.de/impressum/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                <Link
+                    to="/impressum"
                     className="hover:text-white transition"
                 >
                   Impressum
-                </a>
+                </Link>
               </li>
               <li>
                 <a
@@ -73,7 +72,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     className="hover:text-white transition"
                 >
-                  Datenschutzerklärung
+                  Datenschutzerklärung //TODO:Erneuern
                 </a>
               </li>
             </ul>
